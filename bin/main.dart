@@ -12,7 +12,14 @@ void main() {
 
   students.sort("first");
   students.output();
-  students
-      .plus({"first": "New", "last": "Student", "email": "new@student.com"});
+
+  print("\nStudents list before remove operation:");
+  students.output();
+
+  students.plus({"first": "New", "last": "Student", "email": "new@student.com"});
+
   students.remove("last");
+
+  print("\nStudents list after remove operation:");
+  students.output();
 }
